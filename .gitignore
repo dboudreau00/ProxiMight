@@ -1,0 +1,53 @@
+# --- Build output ---
+/build/
+/out/
+/release/
+/dist/
+*.obj
+*.o
+*.a
+*.lib
+*.exp
+*.pdb
+*.ilk
+*.exe
+*.dll
+*.dylib
+*.so
+
+# --- CMake ---
+CMakeCache.txt
+CMakeFiles/
+CMakeUserPresets.json
+cmake_install.cmake
+compile_commands.json
+_deps/
+
+# --- IDE / editor ---
+.vs/
+.vscode/
+*.user
+*.suo
+.idea/
+.cache/
+
+# --- OS cruft ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# --- Vendor SDKs the user supplies themselves ---
+# Never bundled: the driver must be downloaded and signature-verified by whoever
+# runs it, and WinDivert is LGPL/GPL. See docs/SETUP-WINDIVERT.md.
+# Ignore ALL of third_party/, not just one subfolder name: a release unzips to a
+# versioned dir (e.g. WinDivert-2.2.2-A/) that a narrower rule would leave
+# exposed, and nothing under third_party/ is ever meant to be committed.
+/third_party/
+
+# --- Local config / runtime state (never commit user profiles or secrets) ---
+/local/
+*.local.json
+proximight-config/
+
+# --- Local working notes, deliberately not published ---
+/Continue.md

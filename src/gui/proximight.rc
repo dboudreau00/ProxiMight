@@ -1,0 +1,17 @@
+/*
+ * proximight.rc — Win32 resources for the application executable.
+ *
+ * The ICON resource is what Explorer, shortcuts and the taskbar's pinned entry
+ * use for proximight.exe itself. It is a different mechanism from the window
+ * icon: that one is rasterized at run time from the same geometry by
+ * gui_icon_chain_rgba() and applied with glfwSetWindowIcon(). Both draw the
+ * interlocked chain-link brand mark, so they stay visually consistent.
+ *
+ * Icon id 1: the shell picks the ICON resource with the lowest id for the file's
+ * own icon, so keep this first.
+ *
+ * The path is relative to THIS file's directory (rc.exe resolves it that way),
+ * and forward slashes are used so it needs no escaping.
+ */
+
+1 ICON "../../assets/icons/proximight.ico"

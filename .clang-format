@@ -1,0 +1,17 @@
+# ProxiMight C/C++ style. Close to LLVM with 4-space indent and a wider column.
+BasedOnStyle: LLVM
+Language: Cpp
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ColumnLimit: 100
+PointerAlignment: Right
+AlignAfterOpenBracket: Align
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+BreakBeforeBraces: Attach
+SpaceAfterCStyleCast: true
+SortIncludes: false
+IndentCaseLabels: false
+KeepEmptyLinesAtTheStartOfBlocks: false
