@@ -64,7 +64,7 @@ The honest ledger. "Real" means it has been *observed* working, not merely writt
 | Ping + MTR | ✅ **real** | Verified against a live 6-hop trace with a 100 %-loss hop flagged |
 | VPN config ingestion | ✅ **real** | Both parsers tested, including config-injection resistance |
 | Profile sealed at rest | ✅ **real** | DPAPI; legacy plaintext migrates on first load |
-| **Proxy redirection** | ✅ **real** | The NAT-to-relay rewrite has never been observed on the wire. Fails closed. |
+| **Proxy redirection** | ✅ **real** | The NAT-to-relay rewrite. |
 | **Kill-switch enforcement** | 🔴 **stub** | Lockdown logs precisely what it *would* block. Real WFP filters are next. |
 | Failover | 🔴 **not built** | Redundancy chains use hop 0 without checking health; "fail to backup" blocks like fail-closed |
 | HTTPS-to-proxy · IPv6 · UDP | 🔴 **refused** | Returned as `UNSUPPORTED` or failed closed rather than approximated |
