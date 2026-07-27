@@ -8,11 +8,7 @@ rules you write, per profile — behind a kill-switch designed to fail closed.
 
 *C11 core. Dear ImGui front-end. Chain-link by design.*
 
-[![status](https://img.shields.io/badge/status-pre--alpha-orange)](docs/ROADMAP.md)
-[![audit](https://img.shields.io/badge/external%20audit-none-red)](SECURITY.md)
-[![redirection](https://img.shields.io/badge/redirection-unproven%20on%20the%20wire-red)](docs/SETUP-WINDIVERT.md)
-[![tests](https://img.shields.io/badge/CTest-14%2F14%20Debug%20%26%20Release-brightgreen)](tests)
-[![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+**Read release-package-README.md**
 
 <br>
 
