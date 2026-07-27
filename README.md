@@ -1,6 +1,7 @@
 <div align="center">
 
 # ProxiMight
+<img width="472" height="363" alt="Screenshot 2026-07-26 194529" src="https://github.com/user-attachments/assets/b502b551-7b7b-4a19-8566-114231ad18db" />
 
 **A per-application proxifier for Windows.**
 Force any app's traffic through the SOCKS/HTTP proxies **you** choose — decided by
