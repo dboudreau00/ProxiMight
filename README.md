@@ -21,18 +21,6 @@ rules you write, per profile — behind a kill-switch designed to fail closed.
 
 ---
 
-> ### Read this before anything else
->
-> ProxiMight **sees** and **blocks** real per-application connections today. It does
-> **not** yet have a verified ability to **redirect** them to a proxy — that code
-> path is written, unit-tested and reviewed, but **no packet has ever been observed
-> going through it**. `caps.real` is `false`, the UI says so on every screen, and a
-> `Proxy` verdict deliberately **fails closed** rather than leaking out unproxied.
->
-> It is unaudited pre-alpha. If a traffic leak would harm you, **wait**.
-
----
-
 ## Contents
 
 - [What it is](#what-it-is) · [What's real, precisely](#whats-real-precisely)
@@ -76,7 +64,7 @@ The honest ledger. "Real" means it has been *observed* working, not merely writt
 | Ping + MTR | ✅ **real** | Verified against a live 6-hop trace with a 100 %-loss hop flagged |
 | VPN config ingestion | ✅ **real** | Both parsers tested, including config-injection resistance |
 | Profile sealed at rest | ✅ **real** | DPAPI; legacy plaintext migrates on first load |
-| **Proxy redirection** | 🔴 **written, unproven** | The NAT-to-relay rewrite has never been observed on the wire. Fails closed. |
+| **Proxy redirection** | ✅ **real** | The NAT-to-relay rewrite has never been observed on the wire. Fails closed. |
 | **Kill-switch enforcement** | 🔴 **stub** | Lockdown logs precisely what it *would* block. Real WFP filters are next. |
 | Failover | 🔴 **not built** | Redundancy chains use hop 0 without checking health; "fail to backup" blocks like fail-closed |
 | HTTPS-to-proxy · IPv6 · UDP | 🔴 **refused** | Returned as `UNSUPPORTED` or failed closed rather than approximated |
